@@ -1,0 +1,45 @@
+@keyframes slideDown {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 500px;
+  }
+}
+
+.dropdown {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  display: none; /* Ẩn menu ban đầu */
+}
+.dropdown2 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  display: none; /* Ẩn menu ban đầu */
+}
+.group:hover .dropdown {
+  display: block; /* Hiển thị menu khi hover */
+  animation: slideDown 1s ease-out forwards;
+}
+.group:hover .dropdown2 {
+  display: block; /* Hiển thị menu khi hover */
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+a {
+  /* padding-right: 40px; */
+  font-size: 14px;
+  font-weight: 700;
+}
+.Home-Name > li {
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  /* margin-right: 2px; */
+}
+
+.icon a:hover {
+  color: white;
+}
