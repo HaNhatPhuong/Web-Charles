@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 function OurTeam() {
-  const [isScale, setIsScale] = useState(false);
   return (
     <div>
       <div className="h-[533px] px-[174px]">

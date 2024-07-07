@@ -1,25 +1,30 @@
 import React from "react";
-import { Outlet } from "react-router";
+import Banner from "./conponents/Banner";
+import Members from "./conponents/Members";
+import Consutation from "./conponents/Consutation";
+import PartnerSlider from "./conponents/PartnerSlider";
+import Footer from "./conponents/Footer";
 
-const Ourteam = () => {
-  const backgroundShop = "/src-img/Shop.jpg";
+function index() {
   return (
-    <div className=" relative mt-[70px]">
-      <div
-        className="  h-[234px] bg-[#313a4c66]  bg-cover bg-center bg-no-repeat bg-fixed "
-        style={{
-          backgroundImage: `url(${backgroundShop})`,
-          backgroundBlendMode: "overlay",
-        }}
-      >
-        <div>
-          <h1 className="text-5xl text-white font-bold text-center pt-[110px] pb-[70px]">
-            OUR TEAM
-          </h1>
-        </div>
+    <div>
+      <div className="mb-[120px]">
+        <Banner />
+      </div>
+      <div className="mb-[120px]">
+        <Members />
+      </div>
+      <div className="mb-[120px]">
+        <Consutation />
+      </div>
+      <div>
+        <PartnerSlider />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
-};
+}
 
-export default Ourteam;
+export default index;

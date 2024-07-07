@@ -1,13 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router";
-import Banner from "./component/Banner";
-import Callout from "./component/Callout";
-import AboutCompany from "./component/AboutCompany";
-import Whywebest from "./component/Whywebest";
-import Count from "./component/Count";
-import Core from "./component/Core";
-import PartnerSlider from "./component/PartnerSlider";
-import Footer from "./component/Footer";
+import Banner from "./components/Banner";
+import Callout from "./components/Callout";
+import AboutCompany from "./components/AboutCompany";
+import Whywebest from "./components/Whywebest";
+import Count from "./components/Count";
+import Core from "./components/Core";
+import PartnerSlider from "./components/PartnerSlider";
+import Footer from "./components/Footer";
 
 const AboutUs = () => {
   return (
