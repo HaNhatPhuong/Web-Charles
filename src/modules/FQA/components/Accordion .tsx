@@ -8,9 +8,9 @@ const AccordionItem = ({ title, content }: any) => {
     <div className="border-b border-gray-200">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left py-4 px-2 flex justify-between items-center"
+        className="w-full text-left py-6 px-2 flex justify-between items-center"
       >
-        <span className="text-lg font-semibold">{title}</span>
+        <span className="text-xl font-normal text-[#555555]">{title}</span>
         <span className="text-2xl">{isOpen ? "-" : "+"}</span>
       </button>
       <div
@@ -32,25 +32,179 @@ const Accordion = () => {
   const items = [
     {
       title: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos ?",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      content: (
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <ol className=" py-4 list-decimal ml-6">
+            <li>
+              Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorperadipiscing elit,
+            </li>
+            <li>sed diam nonummynibh suscipit lobortis nisl ut aliquip ex.</li>
+            <li>
+              vel illum dolore eu feugiat nulla facilisis at vero eros et
+              accumsan et.
+            </li>
+          </ol>
+          <p>
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu.
+          </p>
+          <p>
+            Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+            et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi.
+          </p>
+        </div>
+      ),
     },
+    // noi dung 1
     {
-      title: "Vel illum dolore eu fugiat nulla facilisis at vero eros?",
-      content: "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore...",
+      title: "Vel illum dolore eu feugiat nulla facilisis at vero eros?",
+      content: (
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <ol className=" py-4 list-decimal ml-6">
+            <li>
+              Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorperadipiscing elit,
+            </li>
+            <li>sed diam nonummynibh suscipit lobortis nisl ut aliquip ex.</li>
+            <li>
+              vel illum dolore eu feugiat nulla facilisis at vero eros et
+              accumsan et.
+            </li>
+          </ol>
+          <p>
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu.
+          </p>
+          <p>
+            Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+            et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi.
+          </p>
+        </div>
+      ),
     },
+    // noi dung 2
     {
-      title: "Vel illum dolore eu fugiat nulla facilisis at vero eros?",
-      content: "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore...",
+      title:
+        " Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie?",
+      content: (
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <ol className=" py-4 list-decimal ml-6">
+            <li>
+              Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorperadipiscing elit,
+            </li>
+            <li>sed diam nonummynibh suscipit lobortis nisl ut aliquip ex.</li>
+            <li>
+              vel illum dolore eu feugiat nulla facilisis at vero eros et
+              accumsan et.
+            </li>
+          </ol>
+          <p>
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu.
+          </p>
+          <p>
+            Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+            et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi.
+          </p>
+        </div>
+      ),
     },
+    // noi dung 3
     {
-      title: "Vel illum dolore eu fugiat nulla facilisis at vero eros?",
-      content: "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore...",
+      title: "Ut wisi enim ad minim veniam, quis nostrud exerci tation?",
+      content: (
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <ol className=" py-4 list-decimal ml-6">
+            <li>
+              Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorperadipiscing elit,
+            </li>
+            <li>sed diam nonummynibh suscipit lobortis nisl ut aliquip ex.</li>
+            <li>
+              vel illum dolore eu feugiat nulla facilisis at vero eros et
+              accumsan et.
+            </li>
+          </ol>
+          <p>
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu.
+          </p>
+          <p>
+            Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+            et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi.
+          </p>
+        </div>
+      ),
     },
+    // noi dung 4
     {
-      title: "Vel illum dolore eu fugiat nulla facilisis at vero eros?",
-      content: "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore...",
+      title: "At Vero Eos Et Accusamus Et Iusto Odio Dignissimos ?",
+      content: (
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <ol className=" py-4 list-decimal ml-6">
+            <li>
+              Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorperadipiscing elit,
+            </li>
+            <li>sed diam nonummynibh suscipit lobortis nisl ut aliquip ex.</li>
+            <li>
+              vel illum dolore eu feugiat nulla facilisis at vero eros et
+              accumsan et.
+            </li>
+          </ol>
+          <p>
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu.
+          </p>
+          <p>
+            Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+            et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi.
+          </p>
+        </div>
+      ),
     },
-    // Thêm các mục khác ở đây
   ];
 
   return (
@@ -67,7 +221,7 @@ const Accordion = () => {
           this tiny ship today stillers
         </p>
       </div>
-      <div className="max-w-2xl mx-auto mt-8">
+      <div className=" mx-[174px] mt-8">
         {items.map((item, index) => (
           <AccordionItem
             key={index}
