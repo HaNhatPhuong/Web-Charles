@@ -44,6 +44,18 @@ export default {
         '0%': { transform: 'translateX(100%)' },
         '100%': { transform: 'translateX(0%)' },
       },
+
+    },
+    keyframes: {
+      slideUpforshop: {
+        '0%': { transform: 'translateY(10%)', opacity: '0' },
+        '100%': { transform: 'translateY(0%)', opacity: '1'  },
+      },
+     
+    },
+    animation: {
+      slideUpforshop: 'slideUpforshop 0.3s forwards',
+      
     },
   },
   plugins: [],

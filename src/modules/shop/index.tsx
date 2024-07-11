@@ -1,22 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router";
+import Banner from "./components/Banner";
+import Items from "./components/Items";
+import Footer from "./components/Footer";
 
 const Shop = () => {
-  const backgroundShop = "/src-img/Shop.jpg";
   return (
-    <div className=" relative mt-[70px]">
-      <div
-        className="  h-[234px]  bg-cover bg-center bg-no-repeat bg-fixed "
-        style={{
-          backgroundImage: `url(${backgroundShop})`,
-          backgroundBlendMode: "overlay",
-        }}
-      >
-        <div>
-          <h1 className="text-5xl text-zinc-600 font-bold text-center pt-[110px] pb-[70px]">
-            SHOP
-          </h1>
-        </div>
+    <div>
+      <div className="mb-[120px]">
+        <Banner />
+      </div>
+      <div className="mb-[120px]">
+        <Items />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
