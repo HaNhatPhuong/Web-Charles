@@ -1,15 +1,17 @@
 // import "./App.css";
 import { Outlet, Route, Routes } from "react-router";
 
-import Shop from "./modules/shop";
+import Shop from "./modules/Pages/shop";
 import Layout from "./modules/layout";
 import Home from "./modules/home";
 import Home2 from "./modules/home2";
-import AboutUs from "./modules/about-us";
-import Ourteam from "./modules/our-team";
-import FQA from "./modules/FQA";
-import FourOFour from "./modules/404";
-import Shopdetails from "./modules/Shop-details";
+import AboutUs from "./modules/Pages/about-us";
+import Ourteam from "./modules/Pages/our-team";
+import FQA from "./modules/Pages/FQA";
+import FourOFour from "./modules/Pages/404";
+import Shopdetails from "./modules/Pages/Shop-details";
+import Serviceone from "./modules/Service/Serviceone";
+import Servicetwo from "./modules/Service/Servicetwo";
 
 function App() {
   return (
@@ -53,6 +55,9 @@ function App() {
           <Route path="404" element={<FourOFour />} />
           <Route path="shop" element={<Shop />} />
           <Route path="shopdetails" element={<Shopdetails />} />
+          {/*  */}
+          <Route path="serviceone" element={<Serviceone />} />
+          <Route path="servicetwo" element={<Servicetwo />} />
         </Route>
       </Routes>
     </>

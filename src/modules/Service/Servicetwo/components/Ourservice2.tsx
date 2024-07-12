@@ -37,9 +37,27 @@ const services = [
     description: "The tiny ship today stiller",
     link: "#",
   },
+  {
+    img: "/src-img/ourservice7.jpg",
+    title: "Travel and Aviation",
+    description: "The tiny ship today stiller",
+    link: "#",
+  },
+  {
+    img: "/src-img/ourservice8.jpg",
+    title: "Software Research",
+    description: "The tiny ship today stiller",
+    link: "#",
+  },
+  {
+    img: "/src-img/ourservice9.jpg",
+    title: "Quality Resourcing",
+    description: "The tiny ship today stiller",
+    link: "#",
+  },
 ];
 
-const Service = () => {
+const Ourservice2 = () => {
   return (
     <div className="mx-[174px] py-8">
       <div className="text-center">
@@ -83,4 +101,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Ourservice2;

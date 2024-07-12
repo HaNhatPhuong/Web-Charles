@@ -160,22 +160,22 @@ function Nav() {
                 <span className="">/</span>
               </a>
               <ul className="dropdown absolute left-[-15px] top-full bg-[#fff] text-slate-600 w-[160px] hidden group-hover:block">
-                <li>
+                <Link to={"serviceone"}>
                   <a
                     href=""
                     className="block px-2 py-2 hover:bg-slate-800 hover:text-slate-300"
                   >
                     SERVICE ONE
                   </a>
-                </li>
-                <li>
+                </Link>
+                <Link to={"servicetwo"}>
                   <a
                     href=""
                     className="block px-2 py-2  hover:bg-slate-800 hover:text-slate-300 "
                   >
                     SERVICE TWO
                   </a>
-                </li>
+                </Link>
                 <li>
                   <a
                     href=""

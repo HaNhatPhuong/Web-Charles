@@ -1,4 +1,5 @@
-import { FaTwitter, FaFacebookF, FaPinterestP } from "react-icons/fa";
+import React from "react";
+import { FaFacebookF, FaPinterestP, FaTwitter } from "react-icons/fa";
 
 const TeamMember = ({ image, name, role }: any) => (
   <div className="w-full sm:w-1/2 lg:w-1/4 px-[15px] mt-[30px] text-center">
@@ -29,7 +30,7 @@ const TeamMember = ({ image, name, role }: any) => (
   </div>
 );
 
-function OurTeam() {
+function Members() {
   const teamMembers = [
     {
       image: "/src-img/Ourteam1.jpg",
@@ -55,20 +56,16 @@ function OurTeam() {
 
   return (
     <div>
-      <div className="h-[533px] px-[174px]">
-        <div className="text-center">
-          <h1 className="pb-[22px] text-[38px] font-bold">
-            OUR TEAM
-            <div className="pt-4">
-              <hr className="w-10 border-t-[4px] border-solid border-slate-400 rounded-xl mx-auto" />
-            </div>
-          </h1>
-          <p className="text-[18px] text-[#555555]">
-            A tale of a fateful trip that started from this tropic port aboard
-            this tiny ship today stillers
-          </p>
-        </div>
+      <div className="px-[174px]">
         <div className="flex flex-row mt-[30px]">
+          {teamMembers.map((member, index) => (
+            <TeamMember key={index} {...member} />
+          ))}
+        </div>
+      </div>
+      {/*  */}
+      <div className="px-[174px] mt-[30px]">
+        <div className="flex flex-row">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />
           ))}
@@ -78,4 +75,4 @@ function OurTeam() {
   );
 }
 
-export default OurTeam;
+export default Members;
