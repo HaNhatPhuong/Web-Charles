@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import backgroundAd from "/code/Charles-web/src-img/Advice5.jpg";
 function Advice() {
+  const backgroundAd = "/src-img/Advice5.jpg";
   const settings = {
     dots: true,
     infinite: true,

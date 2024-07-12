@@ -1,7 +1,7 @@
 import React from "react";
-import backgroundImg from "/code/Charles-web/src-img/Feature2.jpg";
 
 function FeatureBanner() {
+  const backgroundImg = "/src-img/Feature2.jpg";
   return (
     <div
       style={{
