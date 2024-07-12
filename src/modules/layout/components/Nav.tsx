@@ -56,14 +56,14 @@ function Nav() {
                     Home version one
                   </a>
                 </Link>
-                <li>
+                <Link to={"home2"}>
                   <a
                     href=""
                     className="block px-2 py-2  hover:bg-slate-800 hover:text-slate-300 "
                   >
                     Home version two
                   </a>
-                </li>
+                </Link>
               </ul>
             </li>
             <li className="relative group">
@@ -123,32 +123,6 @@ function Nav() {
                     SHOP DETAILS
                   </a>
                 </Link>
-                <li className=" relative group">
-                  <a
-                    href=""
-                    className="block px-2 py-2  hover:bg-slate-800 hover:text-slate-300 "
-                  >
-                    THIRD LEVEL MENU
-                  </a>
-                  <ul className=" absolute left-[100px] bg-[#fff] text-slate-600 w-[160px] hidden hover:block ">
-                    <li>
-                      <a
-                        href=""
-                        className="block px-2 py-2 hover:bg-slate-800 hover:text-slate-300"
-                      >
-                        Home version one
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        className="block px-2 py-2  hover:bg-slate-800 hover:text-slate-300 "
-                      >
-                        Home version two
-                      </a>
-                    </li>
-                  </ul>
-                </li>
               </ul>
             </li>
             <li className="relative group">

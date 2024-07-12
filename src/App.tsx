@@ -59,6 +59,7 @@ function App() {
           <Route path="serviceone" element={<Serviceone />} />
           <Route path="servicetwo" element={<Servicetwo />} />
         </Route>
+        <Route element={<Home2 />} />
       </Routes>
     </>
   );
