@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 
 const AccordionItem = ({ title, content }: any) => {
   const [isOpen, setIsOpen] = useState(false);
-  const contentRef = useRef(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <div className="border-b border-gray-200">
@@ -16,7 +16,10 @@ const AccordionItem = ({ title, content }: any) => {
       <div
         ref={contentRef}
         style={{
-          maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : "0",
+          maxHeight:
+            isOpen && contentRef.current
+              ? `${contentRef.current.scrollHeight}px`
+              : "0",
           overflow: "hidden",
           transition: "max-height 0.3s ease-out",
         }}

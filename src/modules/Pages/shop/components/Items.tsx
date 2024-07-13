@@ -182,6 +182,18 @@ function Items() {
 
   return (
     <div className="mx-[174px]">
+      <div className="flex justify-between items-center mb-8">
+        <p className="text-lg text-[#555555]">Showing all 1-15 results</p>
+        <div className="">
+          <select className="p-2 border-slate-200 border-2 rounded-lg">
+            <option value="">Default Sorting</option>
+            <option value="">Price</option>
+            <option value="">Size</option>
+            <option value="">Trending</option>
+            <option value="">Upcoming</option>
+          </select>
+        </div>
+      </div>
       <div className="grid grid-cols-4 gap-4">
         {currentBooks.map((book, index) => (
           <BookCard

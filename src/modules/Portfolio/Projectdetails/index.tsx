@@ -1,16 +1,21 @@
 import React from "react";
 import Banner from "./components/Banner";
-import Details from "./components/Details";
+import Details from "../../Service/Servicedetails/components/Details";
+import Detailspro from "./components/Detailspro";
 import Footer from "./components/Footer";
+import Advice from "./components/Advice";
 
-function Servicedtails() {
+function Projectdetails() {
   return (
     <div>
       <div className="mb-[120px]">
         <Banner />
       </div>
       <div className="mb-[120px]">
-        <Details />
+        <Detailspro />
+      </div>
+      <div>
+        <Advice />
       </div>
       <div>
         <Footer />
@@ -19,4 +24,4 @@ function Servicedtails() {
   );
 }
 
-export default Servicedtails;
+export default Projectdetails;

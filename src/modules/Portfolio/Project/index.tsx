@@ -1,16 +1,16 @@
 import React from "react";
 import Banner from "./components/Banner";
-import Details from "./components/Details";
+import Ourcase from "./components/Ourcase";
 import Footer from "./components/Footer";
 
-function Servicedtails() {
+function Project() {
   return (
     <div>
       <div className="mb-[120px]">
         <Banner />
       </div>
       <div className="mb-[120px]">
-        <Details />
+        <Ourcase />
       </div>
       <div>
         <Footer />
@@ -19,4 +19,4 @@ function Servicedtails() {
   );
 }
 
-export default Servicedtails;
+export default Project;

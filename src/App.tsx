@@ -12,6 +12,9 @@ import FourOFour from "./modules/Pages/404";
 import Shopdetails from "./modules/Pages/Shop-details";
 import Serviceone from "./modules/Service/Serviceone";
 import Servicetwo from "./modules/Service/Servicetwo";
+import Servicedtails from "./modules/Service/Servicedetails";
+import Project from "./modules/Portfolio/Project";
+import Projectdetails from "./modules/Portfolio/Projectdetails";
 
 function App() {
   return (
@@ -58,6 +61,9 @@ function App() {
           {/*  */}
           <Route path="serviceone" element={<Serviceone />} />
           <Route path="servicetwo" element={<Servicetwo />} />
+          <Route path="servicedtails" element={<Servicedtails />} />
+          <Route path="project" element={<Project />} />
+          <Route path="projectdetails" element={<Projectdetails />} />
         </Route>
         <Route element={<Home2 />} />
       </Routes>
