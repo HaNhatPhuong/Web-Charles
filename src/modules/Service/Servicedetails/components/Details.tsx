@@ -201,7 +201,7 @@ function Details() {
                 ].map((solution, index) => (
                   <li
                     key={index}
-                    className="flex items-center px-6 border-2 my-2 border-slate-200 rounded-lg"
+                    className="flex items-center px-6 border-2 my-2 border-slate-200 hover:border-[#001468] duration-300 ease-in-out rounded-lg"
                   >
                     <a className="text-[18px] font-normal" href="#">
                       {solution}
