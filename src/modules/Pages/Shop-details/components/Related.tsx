@@ -14,7 +14,7 @@ const BookCard = ({ title, price, image }: any) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className="border rounded-lg p-4 flex flex-col Related-center">
+      <div className="border hover:border-[#001648]  duration-500 ease-in-out rounded-lg p-4 flex flex-col Related-center">
         <img
           src={image}
           alt={title}

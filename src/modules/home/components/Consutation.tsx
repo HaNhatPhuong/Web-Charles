@@ -26,21 +26,21 @@ function Consutation() {
             <div className="flex flex-wrap mx-[15px]">
               <div className="md:w-1/2 px-[15px]">
                 <input
-                  className="w-full  border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-9"
+                  className="w-full border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-9 focus:border-[#001648]"
                   type="text"
                   placeholder="Name*"
                 />
               </div>
               <div className="md:w-1/2 px-[15px]">
                 <input
-                  className="w-full  border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-9"
+                  className="w-full  border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-9 focus:border-[#001648]"
                   type=" number"
                   placeholder="Phone*"
                 />
               </div>
               <div className="md:w-1/2 px-[15px]">
                 <input
-                  className="w-full  border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-9"
+                  className="w-full border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-9 focus:border-[#001648]"
                   type="email"
                   placeholder="Email*"
                 />
@@ -60,7 +60,8 @@ function Consutation() {
               </div>
               <div className="w-full mb-8 px-[15px]">
                 <textarea
-                  className="w-full h-[110px] max-h-[110px] border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-[32px]"
+                  className="w-full h-[110px] max-h-[110px] border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-[32px]
+                  focus:border-[#001648]"
                   placeholder="Message"
                 ></textarea>
               </div>

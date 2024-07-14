@@ -10,10 +10,12 @@ function Header() {
         <div className="flex mr-auto">
           <div className="">
             {/* logo */}
-            <img
-              src="https://html.creativegigstf.com/charles/images/logo/logo.png"
-              alt=""
-            />
+            <a href="/">
+              <img
+                src="https://html.creativegigstf.com/charles/images/logo/logo.png"
+                alt=""
+              />
+            </a>
           </div>
           <div className="flex space-x-12 ml-auto ">
             {/* address and email and button */}

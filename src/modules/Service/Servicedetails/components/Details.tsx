@@ -216,17 +216,17 @@ function Details() {
                 <div className="flex flex-col gap-3 mb-8">
                   <input
                     type="text"
-                    className="pb-3 border-b border-gray-300 outline-none"
+                    className="pb-3 border-b border-gray-300 outline-none focus:border-[#001648]"
                     placeholder="Name"
                   />
                   <input
                     type="text"
-                    className="pb-3 border-b border-gray-300 outline-none"
+                    className="pb-3 border-b border-gray-300 outline-none focus:border-[#001648]"
                     placeholder="Email"
                   />
                   <input
                     type="text"
-                    className="pb-3 border-b border-gray-300 rounded-none outline-none"
+                    className="pb-3 border-b border-gray-300 rounded-none outline-none focus:border-[#001648]"
                     placeholder="Message"
                   />
                 </div>
