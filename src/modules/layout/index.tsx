@@ -15,7 +15,7 @@ function Layout() {
             <div>
               <Header />
             </div>
-            <div className=" absolute z-50">
+            <div className="absolute z-50">
               <Nav />
             </div>
           </>

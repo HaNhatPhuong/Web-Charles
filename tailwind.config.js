@@ -7,18 +7,17 @@ export default {
   ],
   theme: {
     extend: {
+      maxHeight: {
+        '0': '0',
+        '500': '500px',
+      },
+      transitionProperty: {
+        'max-height': 'max-height',
+      },
       
     
       
-        // keyframes: {
-        //   slideDown: {
-        //     '0%': { height: '0' },
-        //     '100%': { height: '100%' },
-        //   },
-        // },
-        // animation: {
-        //   slideDown: 'slideDown 3s ease-out forwards',
-        // },
+       
       keyframes: {
         slideUp: {
           '0%': { transform: 'translateY(20%)', opacity: '0' },
@@ -58,6 +57,8 @@ export default {
       
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
 

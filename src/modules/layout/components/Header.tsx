@@ -1,6 +1,5 @@
 import { IoIosMail } from "react-icons/io";
 import { PiMapPinArea } from "react-icons/pi";
-import "/code/Charles-web/src/App.css";
 
 function Header() {
   return (
