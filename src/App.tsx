@@ -18,6 +18,7 @@ import Servicetwo from "./modules/Service/Servicetwo";
 import Home from "./modules/home";
 import Home2 from "./modules/home2";
 import Layout from "./modules/layout";
+import Contact from "./modules/Contact";
 
 function App() {
   return (
@@ -74,6 +75,8 @@ function App() {
           <Route path="bloglist" element={<Bloglist />} />
           <Route path="bloggird" element={<Bloggird />} />
           <Route path="blogdetails" element={<Blogdetails />} />
+          {/* CONTACT */}
+          <Route path="contact" element={<Contact />} />
         </Route>
         <Route element={<Home2 />} />
       </Routes>

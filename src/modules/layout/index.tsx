@@ -27,30 +27,6 @@ function Layout() {
           </div>
         )}
       </div>
-      {/* <div className=" relative z-10">
-        <Service />
-      </div> */}
-      {/* <div className="relative mt-[-70px] ">
-        <Banner />
-      </div> */}
-      {/* <div className=" overflow-hidden">
-        <Feature />
-      </div>
-      <div className="mb-[120px] ">
-        <About />
-      </div>
-      <div className="mb-[120px]">
-        <FeatureBanner />
-      </div>
-      <div className="mb-[120px]">
-        <Service />
-      </div>
-      <div className="mb-[120px]">
-        <Advice />
-      </div>
-      <div>
-        <OurTeam />
-      </div> */}
     </>
   );
 }

@@ -31,8 +31,8 @@ function Nav() {
       <div
         className={`${
           isNavFixed
-            ? "fixed top-0 w-full z-50 bg-[#001635] transition-transform duration-500 transform translate-y-0"
-            : "relative transition-transform duration-500 transform"
+            ? "fixed top-0 w-full z-50 bg-[#001635] transition-transform duration-500 ease-in-out transform translate-y-0"
+            : "relative transition-transform duration-500 ease-in-out transform"
         } h-[77px] mb-[32px] bg-[#001635] ${
           !isNavFixed ? "mr-[160px] ml-[210px]" : ""
         } flex pl-[55px]`}
@@ -94,7 +94,10 @@ function Nav() {
                   {item.name} {item.links.length > 0 && <IoIosArrowDown />}
                 </a>
                 {item.links.length > 0 && (
-                  <ul className="absolute left-[-15px] top-full bg-white text-slate-600 w-[200px] overflow-hidden max-h-0 transition-max-height duration-500 ease-out group-hover:max-h-[500px]">
+                  <ul
+                    className="absolute left-[-15px] top-full bg-white text-slate-600 w-[200px] overflow-hidden max-h-0 
+                  transition-all duration-700 ease-out group-hover:max-h-[500px] "
+                  >
                     {item.links.map((link, idx) => (
                       <Link key={idx} to={link.path}>
                         <a className="block px-2 py-2 hover:bg-slate-800 hover:text-slate-300">

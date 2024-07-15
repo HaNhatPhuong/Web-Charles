@@ -63,7 +63,7 @@ function Footer() {
               </ul>
             </div>
             {/* Solutions Section */}
-            <div className="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/6">
+            <div className="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/5">
               <h6 className="text-white text-[18px] font-medium mb-[30px]">
                 SOLUTIONS
               </h6>
