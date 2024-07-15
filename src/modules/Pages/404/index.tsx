@@ -7,7 +7,7 @@ const FourOFour = () => {
       <div className="mb-[120px]">
         <Banner />
       </div>
-      <div>
+      <div className="mb-[120px]">
         <Text />
       </div>
     </div>
