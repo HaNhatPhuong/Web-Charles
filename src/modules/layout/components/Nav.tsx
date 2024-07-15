@@ -196,30 +196,30 @@ function Nav() {
                 <span className="">/</span>
               </a>
               <ul className="dropdown absolute left-[-15px] top-full bg-[#fff] text-slate-600 w-[160px] hidden group-hover:block">
-                <li>
+                <Link to={"bloglist"}>
                   <a
                     href=""
                     className="block px-2 py-2 hover:bg-slate-800 hover:text-slate-300"
                   >
                     BLOG LIST
                   </a>
-                </li>
-                <li>
+                </Link>
+                <Link to={"bloggird"}>
                   <a
                     href=""
                     className="block px-2 py-2  hover:bg-slate-800 hover:text-slate-300 "
                   >
                     BLOG GIRD
                   </a>
-                </li>
-                <li>
+                </Link>
+                <Link to={"blogdetails"}>
                   <a
                     href=""
                     className="block px-2 py-2  hover:bg-slate-800 hover:text-slate-300 "
                   >
                     BLOG DETAILS
                   </a>
-                </li>
+                </Link>
               </ul>
             </li>
             <li className="relative group">

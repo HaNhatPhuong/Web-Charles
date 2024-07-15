@@ -15,6 +15,9 @@ import Servicetwo from "./modules/Service/Servicetwo";
 import Servicedtails from "./modules/Service/Servicedetails";
 import Project from "./modules/Portfolio/Project";
 import Projectdetails from "./modules/Portfolio/Projectdetails";
+import Bloglist from "./modules/Blogs/BlogList";
+import Bloggird from "./modules/Blogs/BlogGird";
+import Blogdetails from "./modules/Blogs/Blogdetails";
 
 function App() {
   return (
@@ -50,20 +53,27 @@ function App() {
       </div> */}
       <Routes>
         <Route element={<Layout />}>
+          {/*  */}
           <Route path="/" element={<Home />} />
           <Route path="home2" element={<Home2 />} />
+          {/* PAGES */}
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="ourteam" element={<Ourteam />} />
           <Route path="fqa" element={<FQA />} />
           <Route path="404" element={<FourOFour />} />
           <Route path="shop" element={<Shop />} />
           <Route path="shopdetails" element={<Shopdetails />} />
-          {/*  */}
+          {/* SERVICE */}
           <Route path="serviceone" element={<Serviceone />} />
           <Route path="servicetwo" element={<Servicetwo />} />
           <Route path="servicedtails" element={<Servicedtails />} />
+          {/*PROJECT  */}
           <Route path="project" element={<Project />} />
           <Route path="projectdetails" element={<Projectdetails />} />
+          {/* BLOGS */}
+          <Route path="bloglist" element={<Bloglist />} />
+          <Route path="bloggird" element={<Bloggird />} />
+          <Route path="blogdetails" element={<Blogdetails />} />
         </Route>
         <Route element={<Home2 />} />
       </Routes>
