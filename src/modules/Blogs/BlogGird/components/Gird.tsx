@@ -19,7 +19,7 @@ const Blog1 = ({ image, title, role }: any) => (
       </a>
     </div>
     <div className="mt-[25px] mb-3">
-      <h2 className="text-[26px] text-[#232323] font-semibold mb-[10px]">
+      <h2 className="text-[22px] text-[#232323] font-semibold mb-[10px]">
         {title}
       </h2>
       <p className="text-[18px] font-normal text-[#555555]">{role}</p>
@@ -42,28 +42,40 @@ const Blog2 = ({ image, title, time }: any) => (
   </div>
 );
 
-function List() {
+function Gird() {
   const ListBlog1 = [
     {
-      image: "/src-img/Singleblog1.jpg",
-      title: "Its like a kind of torture to have to watch the show",
-      role: "A tale of a fateful trip that started from this tropic aboard this tiny ship today still wanted by the government apartment in the sky moving on up to the east side a family.",
+      image: "/src-img/bloggird1.jpg",
+      title: "Trouble with the law since",
+      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
     },
     {
-      image: "/src-img/Singleblog2.jpg",
-      title: "Its like a kind of torture to have to watch the show",
-      role: "A tale of a fateful trip that started from this tropic aboard this tiny ship today still wanted by the government apartment in the sky moving on up to the east side a family.",
+      image: "/src-img/bloggird2.jpg",
+      title: "Kind of torture to have to watch",
+      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
     },
     {
-      image: "/src-img/Singleblog3.jpg",
+      image: "/src-img/bloggird3.jpg",
+      title: "Make the best of things its an uphill.",
+      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
+    },
+    //
+    {
+      image: "/src-img/bloggird1.jpg",
       title: "Its like a kind of torture to have to watch the show",
-      role: "A tale of a fateful trip that started from this tropic aboard this tiny ship today still wanted by the government apartment in the sky moving on up to the east side a family.",
+      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
     },
     {
-      image: "/src-img/Singleblog4.jpg",
+      image: "/src-img/bloggird2.jpg",
       title: "Its like a kind of torture to have to watch the show",
-      role: "A tale of a fateful trip that started from this tropic aboard this tiny ship today still wanted by the government apartment in the sky moving on up to the east side a family.",
+      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
     },
+    {
+      image: "/src-img/bloggird3.jpg",
+      title: "Its like a kind of torture to have to watch the show",
+      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
+    },
+    //
   ];
 
   const ListBlog2 = [
@@ -88,11 +100,14 @@ function List() {
     <div>
       <div className="mx-[174px]">
         <div className="flex flex-wrap">
-          <div className="xl:w-9/12 lg:w-8/12 w-full px-[15px] pb-[30px] border-b-2 border-slate-200 blog-1">
-            {ListBlog1.map((bloglist, index) => (
-              <Blog1 key={index} {...bloglist} />
-            ))}
+          <div className="xl:w-9/12 lg:w-8/12 w-full  px-[15px] pb-[30px]  blog-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+              {ListBlog1.map((bloglist, index) => (
+                <Blog1 key={index} {...bloglist} />
+              ))}
+            </div>
           </div>
+          {/*  */}
           <div className="xl:w-3/12 lg:w-4/12 md:w-6/12 sm:w-8/12 w-full px-[15px] blog-2">
             <div className="section1 mb-[45px]">
               <div className="content-between relative flex items-center">
@@ -157,7 +172,7 @@ function List() {
               </ul>
             </div>
             <div className="section5">
-              <div className="section4">
+              <div>
                 <h6 className="text-[23px] font-normal mb-2 text-[#232323]">
                   Tags
                 </h6>
@@ -193,4 +208,4 @@ function List() {
   );
 }
 
-export default List;
+export default Gird;
