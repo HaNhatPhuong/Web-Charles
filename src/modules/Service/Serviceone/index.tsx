@@ -1,10 +1,8 @@
-import React from "react";
 import Banner from "./components/Banner";
-import Oursolution from "./components/Oursolution";
-import FeatureBanner from "./components/FeatureBanner";
 import Consutation from "./components/Consutation";
 import Feature from "./components/Feature";
-import Footer from "./components/Footer";
+import FeatureBanner from "./components/FeatureBanner";
+import Oursolution from "./components/Oursolution";
 
 function Serviceone() {
   return (
@@ -23,9 +21,6 @@ function Serviceone() {
       </div>
       <div className=" overflow-hidden">
         <Feature />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

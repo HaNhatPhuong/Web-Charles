@@ -1,8 +1,6 @@
-import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { color } from "framer-motion";
+import "slick-carousel/slick/slick.css";
 // import "../App.css";
 
 function Feature() {

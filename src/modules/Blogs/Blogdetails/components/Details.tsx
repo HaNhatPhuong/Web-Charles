@@ -1,34 +1,33 @@
-import React from "react";
 import { AiOutlineFolderOpen } from "react-icons/ai";
 import { GoDot } from "react-icons/go";
 import { IoMdSearch } from "react-icons/io";
 
-const Blog1 = ({ image, title, role }: any) => (
-  <div className="mb-8">
-    <div className=" relative overflow-hidden rounded-lg">
-      <img
-        src={image}
-        alt=""
-        className=" hover:scale-110 duration-500 ease-in-out"
-      />
-      <a
-        href=""
-        className=" absolute bottom-0 px-4 text-white rounded-md font-normal ml-4 mb-2 bg-[#001A57] "
-      >
-        feb 06,2002
-      </a>
-    </div>
-    <div className="mt-[25px] mb-3">
-      <h2 className="text-[22px] text-[#232323] font-semibold mb-[10px]">
-        {title}
-      </h2>
-      <p className="text-[18px] font-normal text-[#555555]">{role}</p>
-    </div>
-    <a className="text-sm text-[#001A57] font-medium hover:underline" href="">
-      READ MORE
-    </a>
-  </div>
-);
+// const Blog1 = ({ image, title, role }: any) => (
+//   <div className="mb-8">
+//     <div className=" relative overflow-hidden rounded-lg">
+//       <img
+//         src={image}
+//         alt=""
+//         className=" hover:scale-110 duration-500 ease-in-out"
+//       />
+//       <a
+//         href=""
+//         className=" absolute bottom-0 px-4 text-white rounded-md font-normal ml-4 mb-2 bg-[#001A57] "
+//       >
+//         feb 06,2002
+//       </a>
+//     </div>
+//     <div className="mt-[25px] mb-3">
+//       <h2 className="text-[22px] text-[#232323] font-semibold mb-[10px]">
+//         {title}
+//       </h2>
+//       <p className="text-[18px] font-normal text-[#555555]">{role}</p>
+//     </div>
+//     <a className="text-sm text-[#001A57] font-medium hover:underline" href="">
+//       READ MORE
+//     </a>
+//   </div>
+// );
 
 const Blog2 = ({ image, title, time }: any) => (
   <div className="mb-8 flex items-center content-center gap-3 border-b border-slate-200 pb-4">
@@ -43,23 +42,23 @@ const Blog2 = ({ image, title, time }: any) => (
 );
 
 function Details() {
-  const ListBlog = [
-    {
-      image: "/src-img/bloggird1.jpg",
-      title: "Trouble with the law since",
-      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
-    },
-    {
-      image: "/src-img/bloggird2.jpg",
-      title: "Kind of torture to have to watch",
-      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
-    },
-    {
-      image: "/src-img/bloggird3.jpg",
-      title: "Make the best of things its an uphill.",
-      role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
-    },
-  ];
+  //   const ListBlog = [
+  //     {
+  //       image: "/src-img/bloggird1.jpg",
+  //       title: "Trouble with the law since",
+  //       role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
+  //     },
+  //     {
+  //       image: "/src-img/bloggird2.jpg",
+  //       title: "Kind of torture to have to watch",
+  //       role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
+  //     },
+  //     {
+  //       image: "/src-img/bloggird3.jpg",
+  //       title: "Make the best of things its an uphill.",
+  //       role: "To seek out new life and new civilizations to boldly go where no man has gone before you would see the biggest gift.",
+  //     },
+  //   ];
 
   const ListBlog2 = [
     {

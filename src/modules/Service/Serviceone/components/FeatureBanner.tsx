@@ -1,5 +1,3 @@
-import React from "react";
-
 function FeatureBanner() {
   const backgroundImg = "/src-img/Feature2.jpg";
   return (

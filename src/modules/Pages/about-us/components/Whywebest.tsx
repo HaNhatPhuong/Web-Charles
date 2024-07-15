@@ -1,4 +1,3 @@
-import React from "react";
 import { IoExtensionPuzzleOutline } from "react-icons/io5";
 import { PiFinnTheHuman, PiPresentationChart } from "react-icons/pi";
 

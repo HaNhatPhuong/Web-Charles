@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import { ImFacebook } from "react-icons/im";
-import { FaTwitter, FaLinkedinIn, FaPinterestP } from "react-icons/fa";
-import { BsCartCheck } from "react-icons/bs";
+import { useEffect, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
+import { BsCartCheck } from "react-icons/bs";
+import { FaLinkedinIn, FaPinterestP, FaTwitter } from "react-icons/fa";
+import { ImFacebook } from "react-icons/im";
+import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 // import "../App.css";
 

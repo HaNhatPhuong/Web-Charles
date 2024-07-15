@@ -1,9 +1,8 @@
-import React from "react";
 import {
   FaFacebookF,
+  FaInstagramSquare,
   FaLinkedin,
   FaTwitter,
-  FaInstagramSquare,
   FaYoutube,
 } from "react-icons/fa";
 

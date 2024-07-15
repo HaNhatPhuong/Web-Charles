@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebookF, FaPinterestP, FaTwitter } from "react-icons/fa";
 
 const TeamMember = ({ image, name, role }: any) => (

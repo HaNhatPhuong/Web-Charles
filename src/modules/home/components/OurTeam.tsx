@@ -1,4 +1,4 @@
-import { FaTwitter, FaFacebookF, FaPinterestP } from "react-icons/fa";
+import { FaFacebookF, FaPinterestP, FaTwitter } from "react-icons/fa";
 
 const TeamMember = ({ image, name, role }: any) => (
   <div className="w-full sm:w-1/2 lg:w-1/4 px-[15px] mt-[30px] text-center">

@@ -1,4 +1,3 @@
-import React from "react";
 import { CiMedal, CiStar } from "react-icons/ci";
 import { PiTargetThin } from "react-icons/pi";
 

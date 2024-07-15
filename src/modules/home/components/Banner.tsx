@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const slides = [
   {

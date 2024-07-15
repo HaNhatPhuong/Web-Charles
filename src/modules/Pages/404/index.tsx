@@ -1,8 +1,5 @@
-import React from "react";
-import { Outlet } from "react-router";
 import Banner from "./components/Banner";
 import Text from "./components/Text";
-import Footer from "./components/Footer";
 
 const FourOFour = () => {
   return (
@@ -12,9 +9,6 @@ const FourOFour = () => {
       </div>
       <div>
         <Text />
-      </div>
-      <div className="mt-[175px]">
-        <Footer />
       </div>
     </div>
   );

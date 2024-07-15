@@ -1,7 +1,5 @@
-import React from "react";
 import Banner from "./components/Banner";
 import Details from "./components/Details";
-import Footer from "./components/Footer";
 
 function Servicedtails() {
   return (
@@ -11,9 +9,6 @@ function Servicedtails() {
       </div>
       <div className="mb-[120px]">
         <Details />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

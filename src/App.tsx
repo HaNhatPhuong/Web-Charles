@@ -1,23 +1,23 @@
 // import "./App.css";
-import { Outlet, Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 
-import Shop from "./modules/Pages/shop";
-import Layout from "./modules/layout";
-import Home from "./modules/home";
-import Home2 from "./modules/home2";
+import Bloggird from "./modules/Blogs/BlogGird";
+import Bloglist from "./modules/Blogs/BlogList";
+import Blogdetails from "./modules/Blogs/Blogdetails";
+import FourOFour from "./modules/Pages/404";
+import FQA from "./modules/Pages/FQA";
+import Shopdetails from "./modules/Pages/Shop-details";
 import AboutUs from "./modules/Pages/about-us";
 import Ourteam from "./modules/Pages/our-team";
-import FQA from "./modules/Pages/FQA";
-import FourOFour from "./modules/Pages/404";
-import Shopdetails from "./modules/Pages/Shop-details";
-import Serviceone from "./modules/Service/Serviceone";
-import Servicetwo from "./modules/Service/Servicetwo";
-import Servicedtails from "./modules/Service/Servicedetails";
+import Shop from "./modules/Pages/shop";
 import Project from "./modules/Portfolio/Project";
 import Projectdetails from "./modules/Portfolio/Projectdetails";
-import Bloglist from "./modules/Blogs/BlogList";
-import Bloggird from "./modules/Blogs/BlogGird";
-import Blogdetails from "./modules/Blogs/Blogdetails";
+import Servicedtails from "./modules/Service/Servicedetails";
+import Serviceone from "./modules/Service/Serviceone";
+import Servicetwo from "./modules/Service/Servicetwo";
+import Home from "./modules/home";
+import Home2 from "./modules/home2";
+import Layout from "./modules/layout";
 
 function App() {
   return (

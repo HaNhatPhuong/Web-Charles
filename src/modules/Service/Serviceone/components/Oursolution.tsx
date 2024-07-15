@@ -1,12 +1,11 @@
 // src/components/Services.js
-import React from "react";
 import {
-  FaShoppingBag,
+  FaHandPointUp,
+  FaLightbulb,
   FaMoneyBillWave,
   FaNetworkWired,
-  FaLightbulb,
-  FaHandPointUp,
   FaRocket,
+  FaShoppingBag,
 } from "react-icons/fa";
 
 const services = [

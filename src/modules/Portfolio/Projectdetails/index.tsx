@@ -1,9 +1,6 @@
-import React from "react";
-import Banner from "./components/Banner";
-import Details from "../../Service/Servicedetails/components/Details";
-import Detailspro from "./components/Detailspro";
-import Footer from "./components/Footer";
 import Advice from "./components/Advice";
+import Banner from "./components/Banner";
+import Detailspro from "./components/Detailspro";
 
 function Projectdetails() {
   return (
@@ -16,9 +13,6 @@ function Projectdetails() {
       </div>
       <div>
         <Advice />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

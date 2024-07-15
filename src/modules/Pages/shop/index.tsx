@@ -1,8 +1,5 @@
-import React from "react";
-import { Outlet } from "react-router";
 import Banner from "./components/Banner";
 import Items from "./components/Items";
-import Footer from "./components/Footer";
 
 const Shop = () => {
   return (
@@ -12,9 +9,6 @@ const Shop = () => {
       </div>
       <div className="mb-[120px]">
         <Items />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

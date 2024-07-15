@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiFillCaretRight } from "react-icons/ai";
 import { FaLightbulb } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";

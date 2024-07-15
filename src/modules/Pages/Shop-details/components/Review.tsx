@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Review() {
   const [activeTab, setActiveTab] = useState("description");

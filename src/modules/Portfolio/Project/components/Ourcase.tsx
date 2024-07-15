@@ -1,6 +1,4 @@
-import { FaTwitter, FaFacebookF, FaPinterestP } from "react-icons/fa";
-
-const TeamMember = ({ image, name, role }: any) => (
+const TeamMember = ({ image, name }: any) => (
   <div className="w-full sm:w-1/2 lg:w-1/3 px-[15px] mt-[30px] text-center">
     <div className="relative group">
       <img
@@ -24,17 +22,17 @@ const TeamMember = ({ image, name, role }: any) => (
 );
 
 function Ourcase() {
-  const settings = {
-    infinite: true,
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    arrows: false,
-    pauseOnHover: true,
-  };
+  // const settings = {
+  //   infinite: true,
+  //   speed: 800,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   cssEase: "linear",
+  //   arrows: false,
+  //   pauseOnHover: true,
+  // };
   const teamMembers = [
     {
       image: "/src-img/project1.jpg",

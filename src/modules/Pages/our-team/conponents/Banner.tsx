@@ -1,5 +1,3 @@
-import React from "react";
-
 function Banner() {
   const backgroundShop = "/src-img/Shop.jpg";
 

@@ -1,9 +1,7 @@
-import React from "react";
 import Banner from "./conponents/Banner";
-import Members from "./conponents/Members";
 import Consutation from "./conponents/Consutation";
+import Members from "./conponents/Members";
 import PartnerSlider from "./conponents/PartnerSlider";
-import Footer from "./conponents/Footer";
 
 function index() {
   return (
@@ -19,9 +17,6 @@ function index() {
       </div>
       <div>
         <PartnerSlider />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

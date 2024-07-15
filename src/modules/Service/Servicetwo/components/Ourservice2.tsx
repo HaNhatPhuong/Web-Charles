@@ -1,5 +1,3 @@
-import React from "react";
-
 const services = [
   {
     img: "/src-img/ourservice1.jpg",

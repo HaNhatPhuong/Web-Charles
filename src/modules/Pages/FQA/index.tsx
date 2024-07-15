@@ -1,9 +1,6 @@
-import React from "react";
-import { Outlet } from "react-router";
-import Banner from "./components/Banner";
 import Accordion from "./components/Accordion ";
+import Banner from "./components/Banner";
 import PartnerSlider from "./components/PartnerSlider";
-import Footer from "./components/Footer";
 
 const FQA = () => {
   return (
@@ -16,9 +13,6 @@ const FQA = () => {
       </div>
       <div>
         <PartnerSlider />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

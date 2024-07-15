@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useRef, useState } from "react";
 
 const AccordionItem = ({ title, content }: any) => {
   const [isOpen, setIsOpen] = useState(false);

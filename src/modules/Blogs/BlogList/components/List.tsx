@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineFolderOpen } from "react-icons/ai";
 import { GoDot } from "react-icons/go";
 import { IoMdSearch } from "react-icons/io";

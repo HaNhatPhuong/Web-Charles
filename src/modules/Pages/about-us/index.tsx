@@ -1,13 +1,10 @@
-import React from "react";
-import { Outlet } from "react-router";
+import AboutCompany from "./components/AboutCompany";
 import Banner from "./components/Banner";
 import Callout from "./components/Callout";
-import AboutCompany from "./components/AboutCompany";
-import Whywebest from "./components/Whywebest";
-import Count from "./components/Count";
 import Core from "./components/Core";
+import Count from "./components/Count";
 import PartnerSlider from "./components/PartnerSlider";
-import Footer from "./components/Footer";
+import Whywebest from "./components/Whywebest";
 
 const AboutUs = () => {
   return (
@@ -32,9 +29,6 @@ const AboutUs = () => {
       </div>
       <div>
         <PartnerSlider />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

@@ -1,12 +1,8 @@
-import React, { useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaTwitter, FaFacebookF, FaPinterestP } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
 
 const TeamMember = ({ image, name, role }: any) => {
-  const [hovered, setHovered] = useState(false);
-
   return (
     <div className="p-4">
       <div className="relative group border rounded-lg  text-center">

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 const BookCard = ({ title, price, image }: any) => {
   const [hovered, setHovered] = useState(false);
@@ -88,7 +88,7 @@ const books = [
 ];
 
 const Related = () => {
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage] = useState(0);
   const booksPerPage = 4;
 
   const settings = {

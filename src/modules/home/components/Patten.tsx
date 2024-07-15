@@ -1,6 +1,5 @@
-import React from "react";
-import backgroudPatten from "/code/Charles-web/src-img/pattern.png";
 import CountUp from "react-countup";
+import backgroudPatten from "/code/Charles-web/src-img/pattern.png";
 
 const CounterBox = ({ from, to, speed, label }: any) => {
   return (

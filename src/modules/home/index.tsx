@@ -1,18 +1,15 @@
-import React from "react";
 // import "./App.css";
 
-import { Outlet } from "react-router";
-import Banner from "./components/Banner";
-import Feature from "./components/Feature";
 import About from "./components/About";
-import FeatureBanner from "./components/FeatureBanner";
-import Service from "./components/Service";
 import Advice from "./components/Advice";
-import OurTeam from "./components/OurTeam";
-import Patten from "./components/Patten";
+import Banner from "./components/Banner";
 import Consutation from "./components/Consutation";
+import Feature from "./components/Feature";
+import FeatureBanner from "./components/FeatureBanner";
+import OurTeam from "./components/OurTeam";
 import PartnerSlider from "./components/PartnerSlider";
-import Footer from "./components/Footer";
+import Patten from "./components/Patten";
+import Service from "./components/Service";
 function Home() {
   return (
     <>
@@ -45,9 +42,6 @@ function Home() {
       </div>
       <div className="">
         <PartnerSlider />
-      </div>
-      <div>
-        <Footer />
       </div>
     </>
   );

@@ -1,6 +1,5 @@
-import React from "react";
-import { PiMapPinArea } from "react-icons/pi";
 import { IoIosMail } from "react-icons/io";
+import { PiMapPinArea } from "react-icons/pi";
 import "../App.css";
 
 function Header() {

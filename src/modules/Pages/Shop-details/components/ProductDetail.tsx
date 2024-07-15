@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { FaMinus, FaPlus } from "react-icons/fa";
+import { useState } from "react";
 
 const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
