@@ -5,9 +5,8 @@ import { GoDot } from "react-icons/go";
 import { ImFacebook } from "react-icons/im";
 import { IoIosPricetags, IoMdSearch } from "react-icons/io";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from "react";
+import "slick-carousel/slick/slick.css";
 
 const Blog1 = ({ image, title, role }: any) => (
   <div className="mb-8">
@@ -84,13 +83,11 @@ function Details() {
       time: "5 minutes ago.",
     },
   ];
-  const [currentPage] = useState(0);
-  const booksPerPage = 2;
 
   const settings = {
     infinite: true,
     speed: 800,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -98,12 +95,6 @@ function Details() {
     arrows: false,
     pauseOnHover: true,
   };
-
-  const pageCount = Math.ceil(Blog1.length / booksPerPage);
-  const currentBooks = ListBlog.slice(
-    currentPage * booksPerPage,
-    (currentPage + 1) * booksPerPage
-  );
 
   return (
     <div>
@@ -220,18 +211,14 @@ function Details() {
                 </h1>
               </div>
               <Slider {...settings}>
-                {Array.from({ length: pageCount }).map((_, pageIndex) => (
-                  <div key={pageIndex}>
-                    <div className="grid grid-cols-2 gap-4 ">
-                      {currentBooks.map((book, index) => (
-                        <Blog1
-                          key={index}
-                          title={book.title}
-                          role={book.role}
-                          image={book.image}
-                        />
-                      ))}
-                    </div>
+                {ListBlog.map((blog, index) => (
+                  <div key={index}>
+                    <Blog1
+                      key={index}
+                      image={blog.image}
+                      title={blog.title}
+                      role={blog.role}
+                    />
                   </div>
                 ))}
               </Slider>
