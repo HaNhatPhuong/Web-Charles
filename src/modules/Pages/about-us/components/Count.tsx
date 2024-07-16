@@ -16,38 +16,52 @@ const CounterBox = ({ from, to, speed, label }: any) => {
   );
 };
 
-const Count = () => {
+function Count() {
+  const backgroudPatten = "/src-img/pattern.png";
   return (
-    <div className="theme-counter-two section-spacing ">
-      <div className="container ">
-        <div className="clearfix">
-          <div className="counter-wrapper mx-[174px]">
-            <div className=" flex mx-[146px]">
-              <CounterBox
-                from={0}
-                to={30}
-                speed={1200}
-                label="Years of Excellence"
-              />
-              <CounterBox
-                from={0}
-                to={100}
-                speed={1200}
-                label="Client Satisfaction"
-              />
-              <CounterBox
-                from={0}
-                to={53}
-                speed={1200}
-                label="Cases Completed"
-              />
-              <CounterBox from={0} to={24} speed={1200} label="Consultants" />
+    <div>
+      <div
+        className="py-[40px]   mx-[174px] bg-no-repeat  bg-center text-center"
+        style={{ backgroundImage: `url(${backgroudPatten})` }}
+      >
+        {/*  */}
+        <div className="theme-counter-two section-spacing  ">
+          <div className="container mx-auto">
+            <div className="clearfix">
+              <div className="counter-wrapper">
+                <div className=" flex mx-[174px]">
+                  <CounterBox
+                    from={0}
+                    to={30}
+                    speed={1200}
+                    label="Years of Excellence"
+                  />
+                  <CounterBox
+                    from={0}
+                    to={100}
+                    speed={1200}
+                    label="Client Satisfaction"
+                  />
+                  <CounterBox
+                    from={0}
+                    to={53}
+                    speed={1200}
+                    label="Cases Completed"
+                  />
+                  <CounterBox
+                    from={0}
+                    to={24}
+                    speed={1200}
+                    label="Consultants"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Count;

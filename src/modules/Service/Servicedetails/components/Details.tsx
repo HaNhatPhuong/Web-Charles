@@ -224,9 +224,8 @@ function Details() {
                     className="pb-3 border-b border-gray-300 outline-none focus:border-[#001648]"
                     placeholder="Email"
                   />
-                  <input
-                    type="text"
-                    className="pb-3 border-b border-gray-300 rounded-none outline-none focus:border-[#001648]"
+                  <textarea
+                    className="pb-3 border-b border-gray-300 rounded-none outline-none focus:border-[#001648] resize-none max-h-24"
                     placeholder="Message"
                   />
                 </div>

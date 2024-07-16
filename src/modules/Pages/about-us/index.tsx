@@ -18,7 +18,7 @@ const AboutUs = () => {
       <div className="mb-[120px]">
         <AboutCompany />
       </div>
-      <div className="mb-[270px]">
+      <div className="mb-[300px]">
         <Whywebest />
       </div>
       <div className="mb-[120px]">

@@ -96,11 +96,25 @@ function Details() {
     pauseOnHover: true,
   };
 
+  const Comments = [
+    {
+      img: "/public/src-img/Guess.jpg",
+      name: "Alex Martin",
+      role: "Its a civilizations to boldly go where no man has gone before you would see the biggest gift would be from me and the card attached would say thank you.",
+    },
+    {
+      img: "/public/src-img/Guess.jpg",
+      name: "James Frank",
+      role: "Its a civilizations to boldly go where no man has gone before you would see the biggest gift would be from me and the card attached would say thank you.",
+    },
+  ];
   return (
     <div>
       <div className="mx-[174px]">
         <div className="flex flex-wrap">
+          {/* bắt đầu Blog1 */}
           <div className="xl:w-9/12 lg:w-8/12 w-full px-[15px] pb-[30px] blog-1">
+            {/* section1 của blog1 */}
             <div className="section1">
               <div className="relative overflow-hidden rounded-lg">
                 <img
@@ -145,6 +159,7 @@ function Details() {
                 </div>
               </div>
             </div>
+            {/* section2 của blog1 */}
             <div className="section2 pt-5">
               <div className="flex flex-wrap">
                 <div className="w-full md:w-5/12">
@@ -201,6 +216,7 @@ function Details() {
                 </div>
               </div>
             </div>
+            {/* section3 của blog1*/}
             <div className="section3 mt-8">
               <div className="">
                 <h1 className="pb-[22px] text-[38px] font-bold">
@@ -223,8 +239,83 @@ function Details() {
                 ))}
               </Slider>
             </div>
+            {/* section4 của blog1 */}
+            <div className="section4 mt-8">
+              <h1 className="pb-[22px] text-[38px] font-bold">
+                Comments(2)
+                <div className="pt-4">
+                  <hr className="w-10 border-t-[4px] border" />
+                </div>
+              </h1>
+              <div className="border p-4">
+                {Comments.map((feature, index) => (
+                  <div key={index} className=" mb-4 flex items-center">
+                    <img
+                      src={feature.img}
+                      alt={feature.name}
+                      className=" mr-4"
+                    />
+                    <div>
+                      <h2 className="text-xl text-gray-900 font-normal">
+                        {feature.name}
+                      </h2>
+
+                      <p className="text-lg text-gray-600">{feature.role}</p>
+                      <button className="pt-2 text-sm text-[#001A48] font-bold">
+                        REPLY
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {/*  */}
+              <div className="mt-16">
+                <h1 className="pb-[22px] text-[30px] font-bold">
+                  POST A COMMNETS
+                  <div className="pt-4">
+                    <hr className="w-10 border-t-[4px] border" />
+                  </div>
+                </h1>
+                <div className="mt-6">
+                  <div className="">
+                    <div className="grid grid-cols-2 gap-4 mb-7 ">
+                      <input
+                        className="pb-[35px] col-span-1 border-b focus:border-black outline-none"
+                        type="text"
+                        placeholder="Name*"
+                      />
+                      <input
+                        className="pb-[35px] col-span-1 border-b focus:border-black outline-none"
+                        type="text"
+                        placeholder="Phone*"
+                      />
+                      <div className="md:col-span-2">
+                        <input
+                          className="pb-[35px] w-full border-b focus:border-black outline-none"
+                          type="text"
+                          placeholder="Email*"
+                        />
+                      </div>
+                      <div className="md:col-span-2">
+                        <textarea
+                          className="w-full h-[110px] max-h-[110px] border-b resize-none rounded-none focus:border-black outline-none"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <button className="py-3 px-10 bg-[#001A48] text-white font-bold rounded-lg">
+                      Comment
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          {/* kết thúc Blog1 */}
+          {/*  */}
+          {/* bắt đầu Blog2 */}
           <div className="xl:w-3/12 lg:w-4/12 md:w-6/12 sm:w-8/12 w-full px-[15px] blog-2">
+            {/* section1 của Blog2 */}
             <div className="section1 mb-[45px]">
               <div className="content-between relative flex items-center">
                 <input
@@ -237,6 +328,7 @@ function Details() {
                 </button>
               </div>
             </div>
+            {/* section2 của Blog2 */}
             <div className="section2 mb-11">
               <h6 className="text-[23px] font-normal mb-[12px] text-[#232323]">
                 Categories
@@ -262,11 +354,13 @@ function Details() {
                 ))}
               </ul>
             </div>
+            {/* section3 của Blog2 */}
             <div className="section3 mb-11">
               {ListBlog2.map((blog, index) => (
                 <Blog2 key={index} {...blog} />
               ))}
             </div>
+            {/* section4 của Blog2 */}
             <div className="section4 mb-11">
               <h6 className="text-[23px] font-normal mb-2 text-[#232323]">
                 Archives
@@ -287,6 +381,7 @@ function Details() {
                 )}
               </ul>
             </div>
+            {/* section5 của Blog2 */}
             <div className="section5">
               <div>
                 <h6 className="text-[23px] font-normal mb-2 text-[#232323]">
@@ -318,6 +413,7 @@ function Details() {
               </div>
             </div>
           </div>
+          {/* kết thúc Blog2 */}
         </div>
       </div>
     </div>

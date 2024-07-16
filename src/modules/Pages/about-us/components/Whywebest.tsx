@@ -28,7 +28,7 @@ function Whywebest() {
           </div>
           {/*  */}
           <div className="flex flex-wrap pt-[55px]">
-            <div className="w-full lg:w-1/2 bg-slate-100">
+            <div className="w-full lg:w-1/2 bg-white">
               <ul className="py-[65px] pl-[50px] pr-[20px]">
                 <li className="mb-12 flex">
                   <IoExtensionPuzzleOutline size={100} />
