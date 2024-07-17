@@ -12,7 +12,7 @@ const TeamMember = ({ image, name }: any) => (
       >
         <a
           className="p-2 font-medium rounded-lg bg-white text-[#001648] hover:bg-[#001648] hover:text-white"
-          href=""
+          href="/projectdetails"
         >
           Business Meeting
         </a>

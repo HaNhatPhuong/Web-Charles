@@ -61,7 +61,7 @@ const Service = () => {
                 {service.title}
               </h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <a href={service.link} className="text-[#001A57] font-semibold">
+              <a href="/servicedtails" className="text-[#001A57] font-semibold">
                 READ MORE &gt;
               </a>
             </div>

@@ -2,8 +2,8 @@ import { FaFacebookF, FaPinterestP, FaTwitter } from "react-icons/fa";
 
 const TeamMember = ({ image, name, role }: any) => (
   <div className="w-full sm:w-1/2 lg:w-1/4 px-[15px] mt-[30px] text-center">
-    <div className="relative group">
-      <img src={image} alt={`${name}'s photo`} />
+    <div className="relative group ">
+      <img className="w-full" src={image} alt={`${name}'s photo`} />
       <div
         className="text-white absolute top-0 left-0 w-full h-full bg-[rgba(0,26,87,0.7)] opacity-0 group-hover:opacity-100 transition-all 
         duration-500 ease-in-out transform scale-y-0 group-hover:scale-y-100 flex flex-col justify-center items-center"

@@ -23,7 +23,10 @@ const Blog1 = ({ image, title, role }: any) => (
       </h2>
       <p className="text-[18px] font-normal text-[#555555]">{role}</p>
     </div>
-    <a className="text-sm text-[#001A57] font-medium hover:underline" href="">
+    <a
+      className="text-sm text-[#001A57] font-medium hover:underline"
+      href="/blogdetails"
+    >
       READ MORE
     </a>
   </div>
