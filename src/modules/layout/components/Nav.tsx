@@ -81,19 +81,20 @@ function Nav() {
                   { name: "BLOG DETAILS", path: "/blogdetails" },
                 ],
               },
-              { name: "CONTACT", links: [] },
+              { name: "CONTACT", path: "/contact", links: [] },
             ].map((item, index) => (
               <li
                 key={index}
                 className="relative group pr-[40px] flex items-center"
               >
-                <a
-                  href="#"
+                <Link
+                  to={item.path || "#"}
                   className="flex items-center hover:text-white space-x-4"
                 >
-                  {item.name} {item.links.length > 0 && <IoIosArrowDown />}
-                </a>
-                {item.links.length > 0 && (
+                  {item.name}{" "}
+                  {item.links && item.links.length > 0 && <IoIosArrowDown />}
+                </Link>
+                {item.links && item.links.length > 0 && (
                   <ul
                     className="absolute left-[-15px] top-full bg-white text-slate-600 w-[200px] overflow-hidden max-h-0 
                   transition-all duration-700 ease-out group-hover:max-h-[500px] "
