@@ -13,6 +13,7 @@
     "@radix-ui/react-navigation-menu": "^1.2.0",
     "@radix-ui/react-tabs": "^1.1.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "canvasjs-react-charts": "^1.0.5",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.11",
     "jquery": "^3.7.1",

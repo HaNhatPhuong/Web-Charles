@@ -58,7 +58,7 @@ function Consutation() {
               </div>
               <div className="w-full mb-8 px-[15px]">
                 <textarea
-                  className="w-full h-[110px] max-h-[110px] border-b border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-[32px]
+                  className="w-full h-[110px] max-h-[110px] border-b resize-none border-gray-300 rounded-none outline-none shadow-none text-base p-0 pb-3 mb-[32px]
                   focus:border-[#001648]"
                   placeholder="Message"
                 ></textarea>

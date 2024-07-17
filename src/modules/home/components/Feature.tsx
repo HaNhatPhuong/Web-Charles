@@ -17,7 +17,7 @@ function Feature() {
       img: "/src-img/ft-1.png",
       title: "Consumer Insights",
       text: "The east side to a deluxe apartment in move on up to the east side",
-      bgColor: "#333",
+      bgColor: "#001A48",
     },
     {
       img: "/src-img/ft-2.png",
