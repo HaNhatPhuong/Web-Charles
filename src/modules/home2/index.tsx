@@ -4,6 +4,7 @@ import Callout from "./components/Callout";
 import Nav from "./components/Nav";
 import Ourcase from "./components/Ourcase";
 import Oursolution from "./components/Oursolution";
+import Whywebest from "./components/Whywebest";
 
 function Home2() {
   return (
@@ -23,8 +24,11 @@ function Home2() {
       <div className="mb-[110px]">
         <Aboutus />
       </div>
-      <div>
+      <div className="mb-[120px]">
         <Ourcase />
+      </div>
+      <div>
+        <Whywebest />
       </div>
     </div>
   );

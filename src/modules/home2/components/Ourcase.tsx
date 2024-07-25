@@ -59,12 +59,18 @@ function Ourcase() {
   return (
     <div>
       <div className="text-center">
-        <h1 className="pb-[22px] text-[38px] font-bold">
-          OUR SERVICES
-          <div className="pt-4">
-            <hr className="w-10 border-t-[4px] border-solid border-slate-400 rounded-xl mx-auto" />
-          </div>
-        </h1>
+        <div className="text-center">
+          <h1 className="pb-[22px] text-[38px] font-bold">
+            OUR CASES
+            <div className="pt-4">
+              <hr className="w-10 border-t-[4px] border-solid border-slate-400 rounded-xl mx-auto" />
+            </div>
+          </h1>
+          <p className="text-[18px] text-[#555555]">
+            A tale of a fateful trip that started from this tropic port aboard
+            this tiny ship today stillers
+          </p>
+        </div>
       </div>
       <div className=" px-[174px]">
         <div className="flex flex-wrap ">
