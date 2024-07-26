@@ -1,5 +1,6 @@
 // import "./App.css";
-import { Route, Routes } from "react-router";
+import { Route, Routes, useLocation } from "react-router";
+import { useState, useEffect } from "react";
 
 import Bloggird from "./modules/Blogs/BlogGird";
 import Bloglist from "./modules/Blogs/BlogList";
@@ -20,66 +21,66 @@ import Home2 from "./modules/home2";
 import Layout from "./modules/layout";
 import Contact from "./modules/Contact";
 
+// Component để cuộn lên đầu trang khi thay đổi route
+const useScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+};
+
+// Component Loader để hiển thị thời gian chờ
+const Loader = () => (
+  <div className=" flex justify-center items-center h-screen">
+    <img src="/src-img/Wedges@1x-3.0s-200px-200px.svg" alt="" />
+  </div>
+);
+
 function App() {
+  const [loading, setLoading] = useState(false);
+  const location = useLocation();
+  // const [currentPage, setCurrentPage] = useState(<Home />);
+
+  useScrollToTop();
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // Thời gian chờ là 1 giây
+
+    return () => clearTimeout(timer);
+  }, [location]);
+
   return (
     <>
-      {/* <div>
-        <div className="">
-          <Header />
-        </div>
-        <div className=" relative z-10">
-          <Nav />
-        </div>
-        <div className="relative mt-[-70px] ">
-          <Banner />
-        </div>
-        <div className=" overflow-hidden">
-          <Feature />
-        </div>
-        <div className="mb-[120px] ">
-          <About />
-        </div>
-        <div className="mb-[120px]">
-          <FeatureBanner />
-        </div>
-        <div className="mb-[120px]">
-          <Service />
-        </div>
-        <div className="mb-[120px]">
-          <Advice />
-        </div>
-        <div>
-          <OurTeam />
-        </div>
-      </div> */}
-      <Routes>
-        <Route element={<Layout />}>
-          {/*  */}
-          <Route path="/" element={<Home />} />
-          <Route path="home2" element={<Home2 />} />
-          {/* PAGES */}
-          <Route path="aboutus" element={<AboutUs />} />
-          <Route path="ourteam" element={<Ourteam />} />
-          <Route path="fqa" element={<FQA />} />
-          <Route path="404" element={<FourOFour />} />
-          <Route path="shop" element={<Shop />} />
-          <Route path="shopdetails" element={<Shopdetails />} />
-          {/* SERVICE */}
-          <Route path="serviceone" element={<Serviceone />} />
-          <Route path="servicetwo" element={<Servicetwo />} />
-          <Route path="servicedtails" element={<Servicedtails />} />
-          {/*PROJECT  */}
-          <Route path="project" element={<Project />} />
-          <Route path="projectdetails" element={<Projectdetails />} />
-          {/* BLOGS */}
-          <Route path="bloglist" element={<Bloglist />} />
-          <Route path="bloggird" element={<Bloggird />} />
-          <Route path="blogdetails" element={<Blogdetails />} />
-          {/* CONTACT */}
-          <Route path="contact" element={<Contact />} />
-        </Route>
-        <Route element={<Home2 />} />
-      </Routes>
+      {loading ? (
+        <Loader />
+      ) : (
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="home2" element={<Home2 />} />
+            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="ourteam" element={<Ourteam />} />
+            <Route path="fqa" element={<FQA />} />
+            <Route path="404" element={<FourOFour />} />
+            <Route path="shop" element={<Shop />} />
+            <Route path="shopdetails" element={<Shopdetails />} />
+            <Route path="serviceone" element={<Serviceone />} />
+            <Route path="servicetwo" element={<Servicetwo />} />
+            <Route path="servicedtails" element={<Servicedtails />} />
+            <Route path="project" element={<Project />} />
+            <Route path="projectdetails" element={<Projectdetails />} />
+            <Route path="bloglist" element={<Bloglist />} />
+            <Route path="bloggird" element={<Bloggird />} />
+            <Route path="blogdetails" element={<Blogdetails />} />
+            <Route path="contact" element={<Contact />} />
+          </Route>
+          <Route path="*" element={<FourOFour />} />
+        </Routes>
+      )}
     </>
   );
 }
