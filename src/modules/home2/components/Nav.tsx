@@ -122,10 +122,12 @@ function Nav() {
                 : "relative transition-transform duration-300 ease-in-out transform"
             } h-[77px] bg-white flex items-center px-[174px]`}
           >
-            <img
-              src="https://html.creativegigstf.com/charles/images/logo/logo.png"
-              alt="Charles Logo"
-            />
+            <a href="/">
+              <img
+                src="https://html.creativegigstf.com/charles/images/logo/logo.png"
+                alt="Charles Logo"
+              />
+            </a>
             <div className="flex mr-auto">
               <ul className="text-[#001635] flex pl-[35px] items-center space-x-6">
                 {[

@@ -1,4 +1,3 @@
-// import "./App.css";
 import { Route, Routes, useLocation } from "react-router";
 import { useState, useEffect } from "react";
 
