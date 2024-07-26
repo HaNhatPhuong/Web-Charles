@@ -1,5 +1,5 @@
 function Aboutus() {
-  const Whywebestimg = "/public/src-img/AboutusWhywebest.jpg";
+  const Whywebestimg = "/src-img/AboutusWhywebest.jpg";
   return (
     <div>
       <div
@@ -33,7 +33,7 @@ function Aboutus() {
                 </p>
                 <img
                   className="pt-[15px] text-white"
-                  src="/public/src-img/sign (1).png"
+                  src="/src-img/sign (1).png"
                   alt=""
                 />
               </div>

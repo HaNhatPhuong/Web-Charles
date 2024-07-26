@@ -2,7 +2,7 @@ import { IoExtensionPuzzleOutline } from "react-icons/io5";
 import { PiFinnTheHuman, PiPresentationChart } from "react-icons/pi";
 
 function Whywebest() {
-  const Whywebestimg = "/public/src-img/Home2best.jpg";
+  const Whywebestimg = "/src-img/Home2best.jpg";
   return (
     <div>
       <div
