@@ -6,6 +6,69 @@ import { ImFacebook } from "react-icons/im";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 
+const LanguageSelector = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const languages = [
+    {
+      name: "English",
+      flag: "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_Kingdom.svg",
+    },
+    {
+      name: "French",
+      flag: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg",
+    },
+    {
+      name: "German",
+      flag: "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+    },
+    {
+      name: "Italian",
+      flag: "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
+    },
+    {
+      name: "Spanish",
+      flag: "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg",
+    },
+  ];
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
+  const selectLanguage = (language: { name: any; flag?: string }) => {
+    setSelectedLanguage(language.name);
+    setIsOpen(false);
+  };
+
+  return (
+    <div className="relative z-50">
+      <div
+        className="flex items-center cursor-pointer"
+        onClick={toggleDropdown}
+      >
+        <img alt={`${selectedLanguage} Flag`} className="w-6 h-4 mr-2" />
+        <span>{selectedLanguage}</span>
+      </div>
+      {isOpen && (
+        <ul className="absolute top-full left-0 mt-2 bg-white text-black shadow-md">
+          {languages.map((language) => (
+            <li
+              key={language.name}
+              className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200"
+              onClick={() => selectLanguage(language)}
+            >
+              <img
+                src={language.flag}
+                alt={`${language.name} Flag`}
+                className="w-6 h-4 mr-2"
+              />
+              <span>{language.name}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
 function Nav() {
   const [isNavFixed, setIsNavFixed] = useState(false);
 
@@ -29,21 +92,12 @@ function Nav() {
   return (
     <div>
       <div className="bg-[#001635]">
-        <div className=" h-[52px] mx-[174px] flex items-center justify-between px-4 text-white text-sm ">
+        <div className="h-[52px] mx-[174px] flex items-center justify-between px-4 text-white text-sm">
           <div className="flex">
             <p className="mr-4">We are leading consultant firm!</p>
-            <div className="">
-              <div className="flex items-center ">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_Kingdom.svg"
-                  alt="UK Flag"
-                  className="w-6 h-4"
-                />
-                <span>English</span>
-              </div>
-            </div>
+            <LanguageSelector />
           </div>
-          <div className="flex gap-4 ">
+          <div className="flex gap-4">
             <a href="">
               <ImFacebook size={20} />
             </a>
@@ -64,8 +118,8 @@ function Nav() {
           <div
             className={`${
               isNavFixed
-                ? "fixed top-0 w-full z-50 bg-white transition-transform duration-500 ease-in-out transform translate-y-0"
-                : "relative transition-transform duration-500 ease-in-out transform"
+                ? "fixed top-0 w-full z-50 bg-white transition-transform duration-300 ease-in-out transform translate-y-0"
+                : "relative transition-transform duration-300 ease-in-out transform"
             } h-[77px] bg-white flex items-center px-[174px]`}
           >
             <img
