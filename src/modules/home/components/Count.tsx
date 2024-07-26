@@ -43,25 +43,25 @@ function Count() {
                   <CounterBox
                     from={0}
                     to={30}
-                    speed={1200}
+                    speed={3000}
                     label="Years of Excellence"
                   />
                   <CounterBox
                     from={0}
                     to={100}
-                    speed={1200}
+                    speed={3000}
                     label="Client Satisfaction"
                   />
                   <CounterBox
                     from={0}
                     to={53}
-                    speed={1200}
+                    speed={3000}
                     label="Cases Completed"
                   />
                   <CounterBox
                     from={0}
                     to={24}
-                    speed={1200}
+                    speed={3000}
                     label="Consultants"
                   />
                 </div>
