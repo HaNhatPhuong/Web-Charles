@@ -64,7 +64,7 @@ function Feature() {
   ];
 
   return (
-    <div className="h-[346px] mb-[120px] cursor-grab ">
+    <div className="h-[346px] mb-[120px] cursor-grab shadow-md">
       <Slider {...settings}>
         {featureData.map((feature, index) => (
           <div
