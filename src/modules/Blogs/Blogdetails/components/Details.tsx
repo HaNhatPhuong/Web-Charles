@@ -98,12 +98,12 @@ function Details() {
 
   const Comments = [
     {
-      img: "/public/src-img/Guess.jpg",
+      img: "/src-img/Guess.jpg",
       name: "Alex Martin",
       role: "Its a civilizations to boldly go where no man has gone before you would see the biggest gift would be from me and the card attached would say thank you.",
     },
     {
-      img: "/public/src-img/Guess.jpg",
+      img: "/src-img/Guess.jpg",
       name: "James Frank",
       role: "Its a civilizations to boldly go where no man has gone before you would see the biggest gift would be from me and the card attached would say thank you.",
     },
