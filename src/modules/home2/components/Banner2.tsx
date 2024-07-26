@@ -1,5 +1,3 @@
-import React from "react";
-
 function Banner2() {
   const Banner2 = "/public/src-img/BannerHome2.jpg";
   return (
