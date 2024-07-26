@@ -30,8 +30,15 @@ const useScrollToTop = () => {
 };
 
 // Component Loader để hiển thị thời gian chờ
+const anhcho = "/public/src-img/CIMG3267.JPG";
 const Loader = () => (
-  <div className=" flex justify-center items-center h-screen">
+  <div
+    // style={{
+    //   backgroundImage: `url(${anhcho})`,
+    //   backgroundBlendMode: "cover",
+    // }}
+    className=" flex justify-center items-center h-screen"
+  >
     <img src="/src-img/Wedges@1x-3.0s-200px-200px.svg" alt="" />
   </div>
 );
