@@ -118,7 +118,7 @@ function Nav() {
           <div
             className={`${
               isNavFixed
-                ? "fixed top-0 w-full z-50 bg-white transition-transform duration-300 ease-in-out transform translate-y-0"
+                ? "fixed top-0 w-full z-50 bg-white shadow-xl transition-transform duration-300 ease-in-out transform translate-y-0"
                 : "relative transition-transform duration-300 ease-in-out transform"
             } h-[77px] bg-white flex items-center px-[174px]`}
           >
@@ -187,12 +187,7 @@ function Nav() {
                         <IoIosArrowDown />
                       )}
                     </Link>
-                    <a
-                      href="#"
-                      className="flex items-center hover:text-[#001635] space-x-1"
-                    >
-                      {/* {item.name} {item.links.length > 0 && <IoIosArrowDown />} */}
-                    </a>
+
                     {item.links.length > 0 && (
                       <ul
                         className="absolute left-0 top-full bg-white text-[#001635] w-[200px] overflow-hidden max-h-0 
