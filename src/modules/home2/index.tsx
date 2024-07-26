@@ -4,7 +4,7 @@ import Callout from "./components/Callout";
 import Nav from "./components/Nav";
 import Ourcase from "./components/Ourcase";
 import Oursolution from "./components/Oursolution";
-import Whywebest from "./components/Whywebest";
+import Whywebest from "./components/FQA";
 
 function Home2() {
   return (

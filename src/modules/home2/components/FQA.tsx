@@ -6,7 +6,7 @@ function Whywebest() {
   return (
     <div>
       <div
-        className="  h-[570px] bg-[#626f90]  bg-cover bg-center bg-no-repeat bg-fixed "
+        className="  h-[570px] bg-[#0d1427]  bg-cover bg-center bg-no-repeat bg-fixed "
         style={{
           backgroundImage: `url(${Whywebestimg})`,
           backgroundBlendMode: "overlay",
