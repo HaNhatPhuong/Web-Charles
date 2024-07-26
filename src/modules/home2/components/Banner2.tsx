@@ -1,5 +1,5 @@
 function Banner2() {
-  const Banner2 = "/public/src-img/BannerHome2.jpg";
+  const Banner2 = "/src-img/BannerHome2.jpg";
   return (
     <div>
       <div
