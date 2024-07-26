@@ -30,7 +30,6 @@ const useScrollToTop = () => {
 };
 
 // Component Loader để hiển thị thời gian chờ
-const anhcho = "/public/src-img/CIMG3267.JPG";
 const Loader = () => (
   <div
     // style={{
