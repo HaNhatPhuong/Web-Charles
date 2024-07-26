@@ -163,7 +163,7 @@ function Details() {
             <div className="section2 pt-5">
               <div className="flex flex-wrap">
                 <div className="w-full md:w-5/12">
-                  <img src="/public/src-img/Blogdetails.jpg" alt="" />
+                  <img src="/src-img/Blogdetails.jpg" alt="" />
                 </div>
                 <div className="w-full md:w-7/12 flex items-center text-center">
                   <div className="flex flex-col gap-5">
