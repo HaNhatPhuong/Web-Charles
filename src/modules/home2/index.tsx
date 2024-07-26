@@ -6,6 +6,10 @@ import Ourcase from "./components/Ourcase";
 import Oursolution from "./components/Oursolution";
 import Whywebest from "./components/FQA";
 import Whychooseus from "./components/Whychooseus";
+import Banner2 from "./components/Banner2";
+import New from "./components/New";
+import SimpleMap from "./components/Map";
+import Footer from "./components/Footer";
 
 function Home2() {
   return (
@@ -31,8 +35,20 @@ function Home2() {
       <div className="mb-[270px]">
         <Whywebest />
       </div>
-      <div>
+      <div className="">
         <Whychooseus />
+      </div>
+      <div className="mb-[120px]">
+        <Banner2 />
+      </div>
+      <div className="mb-[120px]">
+        <New />
+      </div>
+      <div>
+        <SimpleMap />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
