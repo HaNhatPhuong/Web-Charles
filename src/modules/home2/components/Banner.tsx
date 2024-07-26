@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const slides = [
   {
-    src: "/src-img/Banner1.jpg",
+    src: "/src-img/slide-5.jpg",
     caption: "The government they survive artical of fortune",
   },
   {

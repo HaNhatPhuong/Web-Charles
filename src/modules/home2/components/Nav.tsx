@@ -170,17 +170,26 @@ function Nav() {
                       { name: "BLOG DETAILS", path: "/blogdetails" },
                     ],
                   },
-                  { name: "CONTACT", links: [] },
+                  { name: "CONTACT", path: "/contact", links: [] },
                 ].map((item, index) => (
                   <li
                     key={index}
                     className="relative group pr-[40px] flex items-center"
                   >
+                    <Link
+                      to={item.path || "#"}
+                      className="flex items-center  space-x-4"
+                    >
+                      {item.name}{" "}
+                      {item.links && item.links.length > 0 && (
+                        <IoIosArrowDown />
+                      )}
+                    </Link>
                     <a
                       href="#"
                       className="flex items-center hover:text-[#001635] space-x-1"
                     >
-                      {item.name} {item.links.length > 0 && <IoIosArrowDown />}
+                      {/* {item.name} {item.links.length > 0 && <IoIosArrowDown />} */}
                     </a>
                     {item.links.length > 0 && (
                       <ul
