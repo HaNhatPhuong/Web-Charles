@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
@@ -8,20 +8,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const slides = [
   {
     src: "/src-img/slide-5.jpg",
-    caption: "The government they survive artical of fortune",
+    caption: "The government they survive article of fortune",
   },
   {
     src: "/src-img/Banner2.jpg",
-    caption: "The government they survive artical of fortune",
+    caption: "The government they survive article of fortune",
   },
   {
     src: "/src-img/Banner3.jpg",
-    caption: "The government they survive artical of fortune",
+    caption: "The government they survive article of fortune",
   },
 ];
 
 const Banner = () => {
-  const [captionVisible, setCaptionVisible] = useState(false);
+  const [captionVisible, setCaptionVisible] = useState(true);
+
+  useEffect(() => {
+    setCaptionVisible(true);
+  }, []);
 
   const handleSlideChangeStart = () => {
     setCaptionVisible(false);
@@ -46,18 +50,18 @@ const Banner = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="relative h-full">
             <div
-              className="absolute  inset-0 bg-cover bg-center "
+              className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: ` url(${slide.src})`,
+                backgroundImage: `url(${slide.src})`,
               }}
             ></div>
             <div className="absolute inset-0 bg-[#001a1b1a]"></div>
             <div
-              className={`camera_caption absolute inset-0 flex items-center justify-center text-center text-white transition-opacity duration-500  ${
+              className={`camera_caption absolute inset-0 flex items-center justify-center text-center text-white transition-opacity duration-500 ${
                 captionVisible ? "animate-slideUp" : "opacity-0"
               }`}
             >
-              <div className=" absolute top-1/3 left-1/3 transform -translate-x-1/2  container mx-auto">
+              <div className="absolute top-1/3 left-1/3 transform -translate-x-1/2 container mx-auto">
                 <p className="text-2xl font-thin text-[#394253] mb-4">
                   {slide.caption}
                 </p>
