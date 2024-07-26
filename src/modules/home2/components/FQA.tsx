@@ -1,8 +1,42 @@
-import { IoExtensionPuzzleOutline } from "react-icons/io5";
-import { PiFinnTheHuman, PiPresentationChart } from "react-icons/pi";
+import { useState } from "react";
 
 function Whywebest() {
   const Whywebestimg = "/src-img/Home2best.jpg";
+
+  const [openTopic, setOpenTopic] = useState(null);
+
+  const usefulTopics = [
+    {
+      question: "1. What industries do you specialize in?",
+      answer:
+        "A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe apartment in the sky moving on up to the east side a family to explore strange new worlds.",
+    },
+    {
+      question: "2. You guarantee that our plan will raise capital?",
+      answer:
+        "A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe apartment in the sky moving on up to the east side a family to explore strange new worlds.",
+    },
+    {
+      question: "3. Do you ever invest in your clients?",
+      answer:
+        "A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe apartment in the sky moving on up to the east side a family to explore strange new worlds.",
+    },
+    {
+      question: "4. What makes your financial projections special?",
+      answer:
+        "A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe apartment in the sky moving on up to the east side a family to explore strange new worlds.",
+    },
+    {
+      question: "5. Will you agree with everything I say?",
+      answer:
+        "A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe apartment in the sky moving on up to the east side a family to explore strange new worlds.",
+    },
+  ];
+
+  const toggleTopic = (index: any) => {
+    setOpenTopic(openTopic === index ? null : index);
+  };
+
   return (
     <div>
       <div
@@ -28,49 +62,30 @@ function Whywebest() {
           </div>
           {/*  */}
           <div className="flex flex-wrap pt-[55px]">
-            <div className="w-full lg:w-1/2 bg-white">
-              <ul className="py-[65px] pl-[50px] pr-[20px]">
-                <li className="mb-12 flex">
-                  <IoExtensionPuzzleOutline size={100} />
-
-                  <div className="pl-[10px]">
-                    <h5 className="text-[22px] font-semibold mb-[10px]">
-                      Best Strategy
-                    </h5>
-                    <p className="text-lg text-[#555555]">
-                      The Love Boat soon will be making another run plore
-                      strange tools enter new worlds.
-                    </p>
-                  </div>
-                </li>
-                <li className="mb-12 flex">
-                  <PiPresentationChart size={100} />
-                  <div className="pl-[10px]">
-                    <h5 className="text-[22px] font-semibold mb-[10px]">
-                      High-Quality Services
-                    </h5>
-                    <p className="text-lg text-[#555555]">
-                      The Love Boat soon will be making another run plore
-                      strange tools enter new worlds.
-                    </p>
-                  </div>
-                </li>
-                <li className="mb-12 flex">
-                  <PiFinnTheHuman size={100} />
-                  <div className="pl-[10px]">
-                    <h5 className="text-[22px] font-semibold mb-[10px]">
-                      Friendly Support
-                    </h5>
-                    <p className="text-lg text-[#555555]">
-                      The Love Boat soon will be making another run plore
-                      strange tools enter new worlds.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <div className="w-full lg:w-1/2">
               <img src="/src-img/Whywebestimg2.jpg" alt="" />
+            </div>
+            {/*  */}
+            <div className="p-4 w-full lg:w-1/2 bg-white text-xl  text-[#555555]">
+              {usefulTopics.map((topic, index) => (
+                <div key={index} className="mb-6 ">
+                  <p
+                    className="font-semibold cursor-pointer border-b-2 border-slate-200 pb-3"
+                    onClick={() => toggleTopic(index)}
+                  >
+                    {topic.question}
+                  </p>
+                  <div
+                    className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
+                      openTopic === index ? "max-h-screen" : "max-h-0"
+                    }`}
+                  >
+                    {topic.answer && (
+                      <p className="pt-2 text-lg">{topic.answer}</p>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           {/*  */}
