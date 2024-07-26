@@ -32,15 +32,14 @@ function Count() {
   return (
     <div>
       <div
-        className="py-[40px]   mx-[174px] bg-no-repeat  bg-center text-center"
+        className="py-[40px] mx-[174px] bg-no-repeat bg-center text-center"
         style={{ backgroundImage: `url(${backgroudPatten})` }}
       >
-        {/*  */}
-        <div className="theme-counter-two section-spacing  ">
+        <div className="theme-counter-two section-spacing">
           <div className="container mx-auto">
             <div className="clearfix">
               <div className="counter-wrapper">
-                <div className=" flex mx-[174px]">
+                <div className="flex mx-[174px]">
                   <CounterBox
                     from={0}
                     to={30}

@@ -8,7 +8,7 @@ import Feature from "./components/Feature";
 import FeatureBanner from "./components/FeatureBanner";
 import OurTeam from "./components/OurTeam";
 import PartnerSlider from "./components/PartnerSlider";
-import Patten from "./components/Patten";
+import Patten from "./components/Count";
 import Service from "./components/Service";
 function Home() {
   return (
