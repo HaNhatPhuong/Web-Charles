@@ -5,6 +5,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import Charts from "./Charts";
 
 function Detailspro() {
   return (
@@ -83,7 +84,9 @@ function Detailspro() {
                 from me and the card attached.
               </p>
             </div>
-            <div className="chart"></div>
+            <div className="chart">
+              <Charts />
+            </div>
           </div>
         </div>
       </div>
